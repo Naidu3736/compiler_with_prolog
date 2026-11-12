@@ -1,22 +1,25 @@
 % Lexer compiler
 
-% Identifiers
-identifier(N).
-
 % Reserved words by the languaje
-keyword('if').
-keybord('elif').
-keybord('else').
-keyword('while').
+token('if', keyword).
+token('elif', keyword).
+token('else', keyword).
+token('while', keyword).
 
 % Delimiters
-delimiter(';').
-delimiter('(').
-delimiter(')').
+token(';', delimiter).
+token('(', delimiter).
+token(')', delimiter).
 
 % Operators
-operator('+').
-operator('-').
-operator('*').
-operator('/').
+token('-', operator).
+token('+', operator).
+token('*', operator).
+token('/', operator).
+token('=', operator).
 
+% Type values
+token('true', bool).
+token('false', bool).
+
+% Identifiers
