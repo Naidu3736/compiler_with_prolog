@@ -1,5 +1,7 @@
 % Lexer compiler
 
+/* ------- Facts lexer ------- */
+
 % Reserved words by the languaje
 token('if', keyword).
 token('elif', keyword).
@@ -22,4 +24,8 @@ token('=', operator).
 token('true', bool).
 token('false', bool).
 
+/* ------- Rules lexer ------- */
+
 % Identifiers
+
+% Numeric types
